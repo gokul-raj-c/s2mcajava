@@ -8,7 +8,7 @@ int b=1;
 int c=a+b;
 System.out.println(a);
 System.out.println(b);
-while (c <= n) 
+while (c < n) 
 {
 System.out.println(c);
 a = b;

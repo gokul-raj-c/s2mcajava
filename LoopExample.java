@@ -27,7 +27,7 @@ do
 sum3=sum3+k;
 k++;
 } 
-while (k <= n);
+while (k<= n);
 System.out.println("sum="+sum3);
 }
 }

@@ -1,8 +1,11 @@
-class PrimeNumbers
+import java.io.*;
+class PrimeInLimit
 {
-public static void main(String args[])
+public static void main(String args[]) throws IOException
 {
-int n=Integer.parseInt(args[0]);
+DataInputStream x=new DataInputStream(System.in);
+System.out.println("Enter Limit");
+int n=Integer.parseInt(x.readLine());
 System.out.println("Prime numbers up to "+n+":");
 for(int num = 2; num <= n; num++)
 {
