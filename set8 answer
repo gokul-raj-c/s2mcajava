@@ -1,3 +1,4 @@
+8.1
 mits@mits-Veriton-M200-H510:~/gokul java$ java TotalMark 29 gokul 60 70
 roll no: 29
 name: gokul
@@ -5,7 +6,74 @@ english mark: 60
 maths mark: 70
 total mark: 130
 
+------------------------------------------------------------------------------------------------------------------------
 
+8.2
+mits@mits-Veriton-M200-H510:~/gokul java$ java EmployeeDetails
+enter employee no
+101
+enter employee name
+Gokul raj c
+enter employee salary
+25000
+employee deatils
+employee no: 101
+employee name: Gokul raj c
+salary: 25000
+
+------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-Veriton-M200-H510:~/gokul java$ java MatrixAddMul
+enter row of matrix1:
+2
+enter column of matrix1:
+2
+enter values of matrix1:
+1
+2
+3
+4
+enter row of matrix2:
+2
+enter column of matrix2:
+2
+enter values of matrix1:
+5
+6
+7
+8
+matrix1:
+1 2 
+3 4 
+matrix2:
+5 6 
+7 8 
+matrix addition:
+6 8 
+10 12 
+matrix multiplication:
+19 22 
+43 50 
+
+------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-Veriton-M200-H510:~/gokul java$ java ComplexAddition
+Complex number 1
+Enter complex parts:
+2
+Enter imaginary parts:
+3
+Complex number 2
+Enter complex parts:
+4
+Enter imaginary parts:
+5
+Complex number 1
+2 + 3i
+Complex number 2
+4 + 5i
+Complex number addition
+6 + 8i
 
 
 

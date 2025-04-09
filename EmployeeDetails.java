@@ -12,6 +12,7 @@ salary=s;
 }
 void display()
 {
+System.out.println("employee details");
 System.out.println("employee no: "+empno);
 System.out.println("employee name: "+empname);
 System.out.println("salary: "+salary);
