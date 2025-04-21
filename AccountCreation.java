@@ -1,24 +1,27 @@
-import java.io.*;
+import java.util.*;
 class Account
 {
 int acno;
 String name;
 String actype;
-int balance=0;
-Account(int n,String p,String t)
+int balance,amt1,amt2;
+Account(int n,String p,String t,int amt)
 {
 acno=n;
 name=p;
 actype=t;
+balance=amt;
 }
 
-void deposit(int amt)
+void deposit(int amt1)
 {
-balance=balance+amt;
-System.out.println(balance);
+balance=balance+amt1;
+System.out.println();
+System.out.println("Amount "+amt1+" credited");
+System.out.println("Available Balance "+balance+"Rs");
 }
 
-void withdraw(int amt1)
+void withdraw(int amt2)
 {
 if(balance<=0)
 {
@@ -26,60 +29,111 @@ System.out.println("Insufficient Balance");
 }
 else
 {
-balance=balance-amt1;
+balance=balance-amt2;
+System.out.println();
+System.out.println("Amount "+amt2+" debited");
+System.out.println("Available Balance "+balance+"Rs");
 }
+}
+
+void display()
+{
+System.out.println();
+System.out.println("Account Details");
+System.out.println("Account No: "+acno);
+System.out.println("User Name: "+name);
+System.out.println("Account Type: "+actype);
+System.out.println("Balance: "+balance+"Rs");
 }
 
 }
 
 class AccountCreation
 {
-public static void main(String args[]) throws IOException
+public static void main(String args[])
 {
-DataInputStream x=new DataInputStream(System.in);
-int ch;
+int no,ch,bal,ano;
+String name,type;
+Scanner sc=new Scanner(System.in);
+Account a1[]=new Account[5];
+System.out.println("Enter no of Account Holders:");
+int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+System.out.println();
+System.out.println("Enter an account no");
+no=sc.nextInt();
+sc.nextLine();
+System.out.println("Enter user name");
+name=sc.nextLine();
+System.out.println("Enter Account Type");
+type=sc.nextLine();
+System.out.println("Enter Amount");
+bal=sc.nextInt();
+a1[i]=new Account(no,name,type,bal);
+}
 do
 {
-System.out.println("1.create an account\n2.deposit amount\n3.withdraw amount\n4.display details\n5.exit");
+System.out.println();
+System.out.println("1.deposit amount\n2.withdraw amount\n3.display details\n4.exit");
 System.out.println("choose operation");
-ch=Integer.parseInt(x.readLine());
+ch=sc.nextInt();
 switch(ch)
 {
 case 1:
 {
-System.out.println("Enter an account no");
-int n=Integer.parseInt(x.readLine());
-System.out.println("Enter user name");
-String p=x.readLine();
-System.out.println("Enter Account Type");
-String t=x.readLine();
-Account n=new Account(n,p,t);
+System.out.println("Deposit");
+System.out.println("Enter account no:");
+ano=sc.nextInt();
+int j=findaccount(ano,a1,n);
+if(j<0)
+{
+System.out.println("Enter valid account no");
+}
+else
+{
+System.out.println("Enter amount to deposit");
+int amt=sc.nextInt();
+a1[j].deposit(amt);
 break;
 }
+}
+
 case 2:
 {
-System.out.println("Deposit");
-int n=Integer.parseInt(x.readLine());
-System.out.println("Enter amount to deposit");
-int amt=Integer.parseInt(x.readLine());
-n.deposit(amt);
+System.out.println("Withdraw");
+System.out.println("Enter account no:");
+ano=sc.nextInt();
+int j=findaccount(ano,a1,n);
+if(j<0)
+{
+System.out.println("Enter valid account no");
+}
+else
+{
+System.out.println("Enter amount to withdraw");
+int amt1=sc.nextInt();
+a1[j].withdraw(amt1);
 break;
 }
+}
+
 case 3:
 {
-System.out.println("Withdraw");
-int n=Integer.parseInt(x.readLine());
-System.out.println("Enter amount to withdraw");
-int amt1=Integer.parseInt(x.readLine());
-n.withdraw(amt1);
+System.out.println("Enter account no:");
+ano=sc.nextInt();
+int j=findaccount(ano,a1,n);
+if(j<0)
+{
+System.out.println("Enter valid account no");
+}
+else
+{
+a1[j].display();
 break;
+}
 }
 case 4:
-{
-display();
-break;
-}
-case 5:
 {
 System.out.println("User exit");
 break;
@@ -88,7 +142,23 @@ default:
 System.out.println("Enter valid no");
 break;
 }
-}while(ch!=5);
+}while(ch!=4);
+}
+
+static int findaccount(int ano,Account a1[],int n)
+{
+int v=-1;
+for (int k = 0; k < n; k++) 
+{
+if (a1[k] != null && a1[k].acno == ano) 
+{
+v=k;
+return v;
 }
 }
+return v;
+}
+
+}
+
 
