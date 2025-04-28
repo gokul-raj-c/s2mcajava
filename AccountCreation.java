@@ -89,6 +89,7 @@ int j=findaccount(ano,a1,n);
 if(j<0)
 {
 System.out.println("Enter valid account no");
+break;
 }
 else
 {
@@ -108,6 +109,7 @@ int j=findaccount(ano,a1,n);
 if(j<0)
 {
 System.out.println("Enter valid account no");
+break;
 }
 else
 {
@@ -120,12 +122,14 @@ break;
 
 case 3:
 {
+System.out.println("Display Details");
 System.out.println("Enter account no:");
 ano=sc.nextInt();
 int j=findaccount(ano,a1,n);
 if(j<0)
 {
 System.out.println("Enter valid account no");
+break;
 }
 else
 {
