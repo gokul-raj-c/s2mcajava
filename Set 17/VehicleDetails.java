@@ -34,9 +34,9 @@ class VehicleDetails
 {
 public static void main(String args[])
 {
-Vehicle v=new Vehicle(101,"abc","xyz");
+Vehicle v=new Vehicle(101,"Two Wheeler","Scooter");
 v.display();
-v=new Car(102,"mno","pqr");
+v=new Car(102,"Four Wheeler","Car");
 v.display();
 }
 }
