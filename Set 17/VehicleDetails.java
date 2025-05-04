@@ -18,6 +18,10 @@ System.out.println("Name:"+name);
 
 class Car extends Vehicle
 {
+Car(int s, String t, String n) 
+{
+super(s, t, n); 
+}
 void display()
 {
 System.out.println("Serial No:"+sno);
