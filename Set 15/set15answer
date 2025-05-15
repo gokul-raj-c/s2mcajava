@@ -1,0 +1,146 @@
+mits@mits-Veriton-M200-H510:~/gokul java/Set 15$ java AreaCalculation
+enter radius of circle
+10
+Area of circle:314.0
+enter length of rectangle
+12
+enter breadth of rectangle
+14
+Area of Rectangle:168
+enter side1 of triangle
+7
+enter side2 of triangle
+8
+enter side3 of triangle
+9
+Area of Triangle:26.832815729997478
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+mits@mits-Veriton-M200-H510:~/gokul java/Set 15$ java EmployeeTeacherDetails
+enter no of values
+2
+enter employee id
+101
+enter employee name
+gokul
+enter employee salary
+45000
+enter employee address
+ernakulam
+enter teacher department
+bca
+enter teacher subject
+java
+enter employee id
+102
+enter employee name
+abhijith
+enter employee salary
+50000
+enter employee address
+alappuzha
+enter teacher department
+mca
+enter teacher subject
+python
+
+Employee Details
+Employee Id:101
+Employee Name:gokul
+Employee Salary:45000
+Employee Address:ernakulam
+Teacher Department:bca
+Teacehr Subject:java
+
+Employee Id:102
+Employee Name:abhijith
+Employee Salary:50000
+Employee Address:alappuzha
+Teacher Department:mca
+Teacehr Subject:python
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+mits@mits-Veriton-M200-H510:~/gokul java/Set 15$ java PersonEmployeeTeacherDetails
+enter no of values
+2
+enter person name
+gokul
+enter person gender
+male
+enter person address
+ernakulam
+enter person age
+22
+enter employee id
+101
+enter employee company name
+ibm
+enter employee qualification
+mca
+enter employee salary
+45000
+enter teacher id
+201
+enter teacher subject
+java
+enter teacher department
+mca
+enter person name
+abhijith
+enter person gender
+male
+enter person address
+alappuzha
+enter person age
+23
+enter employee id
+102
+enter employee company name
+tcs
+enter employee qualification
+mca
+enter employee salary
+50000
+enter teacher id
+202
+enter teacher subject
+python
+enter teacher department
+mca
+
+Details
+Person Name:gokul
+Person gender:male
+Person Address:ernakulam
+Person Age:22
+Employee Id:101
+Employee Company Name:ibm
+Employee Qualification:mca
+Employee Salary:45000
+Teacher Id:201
+Teacher Subject:java
+Teacher Department:mca
+
+Person Name:abhijith
+Person gender:male
+Person Address:alappuzha
+Person Age:23
+Employee Id:102
+Employee Company Name:tcs
+Employee Qualification:mca
+Employee Salary:50000
+Teacher Id:202
+Teacher Subject:python
+Teacher Department:mca
+
+
+
+
+
+
