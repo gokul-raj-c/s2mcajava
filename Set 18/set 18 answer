@@ -1,0 +1,64 @@
+PS D:\gokul java\Set 18> java AreaPerimeter
+
+Menu:
+1.Circle
+2.Rectangle
+3.Exit
+Enter your choice: 1
+Enter radius of circle: 10
+Area of Circle: 314.16
+Perimeter of Circle: 62.40
+
+Menu:
+1.Circle
+2.Rectangle
+3.Exit
+Enter your choice: 2
+Enter length of rectangle: 4
+Enter width of rectangle: 8
+Area of Rectangle: 32.00
+Perimeter of Rectangle: 24.00
+
+Menu:
+1.Circle
+2.Rectangle
+3.Exit
+Enter your choice: 3
+User exit
+
+
+-----------------------------------------------------------------------------------------------------------
+
+PS D:\gokul java\Set 18> java ProductBill
+Product list
+----------
+Product id      Product name    Price
+----------------------
+101             A               20
+102             B               40
+Enter the number of products needed :
+2
+Enter product id
+101
+Enter product name
+A
+Enter no of quantity
+4
+Enter unit price
+20
+Enter product id
+102
+Enter product name
+B
+Enter no of quantity
+7
+Enter unit price
+40
+Product id      Product name    Quantity        Unit Price      Total
+------------------------------------------------------------------------
+102             A               4               20.0            80.0
+------------------------------------------------------------------------
+101             B               7               40.0            280.0
+------------------------------------------------------------------------
+                        Net Amount      360.0
+PS D:\gokul java\Set 18>
