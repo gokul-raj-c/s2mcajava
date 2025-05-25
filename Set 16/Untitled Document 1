@@ -1,0 +1,55 @@
+//Aim:Compute the area of a rectangle, triangle and a circle using interface.
+
+//Program
+
+interface area1
+{
+  double calc(double l,double b);
+ 
+}
+interface area2
+{
+  double calc(double b,double h);
+}
+interface area3
+{
+  double pi = 3.14;
+  double calc(double x,double y);
+}
+class rectangle implements area1
+{
+  public double calc(double l,double b)
+  {
+    return(l*b);
+  }
+}
+class triangle implements area2
+{
+  public double calc(double b,double h)
+  {
+    return(0.5*b*h);
+  }
+}
+class circle implements area3
+{
+  public double calc(double x,double y)
+  {
+    return(pi*x*y);
+  }
+}
+
+class pgm1
+{
+  public static void main(String arg[])
+  {
+    rectangle r = new rectangle();
+    triangle t = new triangle();
+    circle c = new circle();
+    double a1=r.calc(5,9);
+    double a2=t.calc(2,4);
+    double a3=c.calc(2,3);
+    System.out.println("Area of Rectangle is : " + a1);
+    System.out.println("Area of Triangle is : " + a2);
+    System.out.println("Area of Circle is : " + a3);
+  }
+}
