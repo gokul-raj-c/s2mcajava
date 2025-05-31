@@ -1,0 +1,40 @@
+PS D:\gokul java\Set 27> java FileSearch
+Enter the directory path:
+D:\website
+Contents of the directory:
+[DIR]  .git
+[DIR]  assets
+[DIR]  forms
+[FILE] index.html
+Enter file name to search:
+index.HTML
+File found at: D:\website\index.html
+
+
+
+
+PS D:\gokul java\Set 27> java File
+Enter the no of employees:
+2
+Enter the employee number:
+101
+Enter the employee name:
+gokul
+Enter the employee salary:
+45000
+Enter the employee number:
+102
+Enter the employee name:
+abhijith
+Enter the employee salary:
+50000
+Total size is:41
+101
+gokul
+45000
+102
+abhijith
+50000
+
+
+

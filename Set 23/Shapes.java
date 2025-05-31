@@ -1,8 +1,8 @@
 import java.awt.*;
 import javax.swing.*;
-public class Shapes extends JFrame
+class AllShapes extends JFrame
 {
-Shapes()
+AllShapes()
 {
 setSize(400, 350);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -29,9 +29,11 @@ g.setColor(Color.MAGENTA);
 g.drawRoundRect(200, 200, 80, 80, 20, 20);
 g.drawOval(215, 215, 50, 50);
 }
+}
 
+class Shapes{
 public static void main(String args[]) 
 {
-new Shapes();      
+new AllShapes();      
 }
 }
